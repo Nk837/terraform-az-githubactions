@@ -18,6 +18,6 @@ variable "container_name" {
   default = ["tfstate12"]
 }
 
-# variable "tenant_id" {}
+variable "tenant_id" {}
 
-# variable "subscription_id" {}
+variable "subscription_id" {}
