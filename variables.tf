@@ -1,6 +1,6 @@
 variable "resource_group_name" {
   type    = list(string)
-  default = ["test-rg"]
+  default = ["test-rg", "naveen-rg"]
 }
 
 variable "location" {
@@ -10,12 +10,12 @@ variable "location" {
 
 variable "storage_account_name" {
   type    = list(string)
-  default = ["testaccount837"]
+  default = ["testaccount837", "naveenacc837"]
 }
 
 variable "container_name" {
   type    = list(string)
-  default = ["tfstate12"]
+  default = ["tfstate12", "naveen"]
 }
 
 variable "tenant_id" {
