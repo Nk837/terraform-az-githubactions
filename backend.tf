@@ -1,11 +1,12 @@
-# terraform {
-#   backend "azurerm" {
-#     resource_group_name  = "test-rg"
-#     storage_account_name = "testaccount837"
-#     container_name       = "tfstate12"
-#     key                  = "terraform.tfstate"
-#   }
-# }
+terraform {
+  backend "azurerm" {
+    subscription_id      = "e3bf1520-631c-4200-b6e7-dc6ade33c0b7"
+    resource_group_name  = "test-rg"
+    storage_account_name = "testaccount837"
+    container_name       = "tfstate12"
+    key                  = "terraform.tfstate"
+  }
+}
 
 resource "azurerm_resource_group" "demo" {
   name     = var.resource_group_name[0]
